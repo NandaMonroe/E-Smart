@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@600&family=Roboto&family=Varela+Round&display=swap');
+
+.main{
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
+}
+/*------------ Login container ------------*/
+.box-area{
+    width: 930px;
+}
+/*------------ Right box ------------*/
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+/*------------ Custom Placeholder ------------*/
+::placeholder{
+    font-size: 16px;
+}
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+/*------------ For small screens------------*/
+@media only screen and (max-width: 768px){
+     .box-area{
+        margin: 0 10px;
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+}
+
+.bg {
+    background-image: url(https://img.freepik.com/premium-photo/blur-background-modern-office-interior-design-contemporary-workspace-creative-business_31965-68135.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 10%;
+
+}
+
+.bg-gradient {
+    background-image: linear-gradient(rgb(2, 41, 60), rgb(158, 203, 230));
+}
+
+.box-link {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(rgb(2, 41, 60), rgb(158, 203, 230));
+    margin-right: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    margin-top: 5%;
+    margin-left: 23%;
+}
+
+.banner {
+    width: 30%;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.cursor {
+    cursor: pointer;
+}
