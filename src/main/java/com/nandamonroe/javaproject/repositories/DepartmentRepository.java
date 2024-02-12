@@ -9,6 +9,6 @@ import com.nandamonroe.javaproject.models.Department;
 
 @Repository
 public interface DepartmentRepository extends CrudRepository<Department, Long> {
+    @SuppressWarnings("null") // Suppressing null warning
     List<Department> findAll();
-    
-} 
+}
