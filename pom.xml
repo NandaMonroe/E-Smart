@@ -5,8 +5,9 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<!-- (2/11/24, John): Updated from version 3.1.5 to 3.2.2 -->
+		<version>3.2.2</version>
+		<relativePath/>
 	</parent>
 	<groupId>com.nandamonroe</groupId>
 	<artifactId>java-project</artifactId>
@@ -85,25 +86,24 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-        <!-- DEPENDENCY FOR USING BCRYPT  -->
-        <dependency>
-            <groupId>org.mindrot</groupId>
-            <artifactId>jbcrypt</artifactId>
-            <version>0.4</version>
-        </dependency>
-        <!-- DEPENDENCIES FOR BOOTSTRAP -->
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>webjars-locator</artifactId>
-            <version>0.47</version>
-        </dependency>
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>5.3.1</version>
-        </dependency>
+		<!-- DEPENDENCY FOR USING BCRYPT  -->
+		<dependency>
+			<groupId>org.mindrot</groupId>
+			<artifactId>jbcrypt</artifactId>
+			<version>0.4</version>
+		</dependency>
+		<!-- DEPENDENCIES FOR BOOTSTRAP -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator</artifactId>
+			<version>0.47</version>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>5.3.1</version>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -117,5 +117,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

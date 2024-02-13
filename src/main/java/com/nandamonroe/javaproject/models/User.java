@@ -109,10 +109,13 @@ public class User {
         return username;
     }
 
-    public static void main(String[] args) {
-        User user = new User();
-        System.out.println("Generated 6-digit number: " + user.getUsername());
-    }
+    // (2/11/24, John): Fernanda, I commented out the main method below because it was causing 
+    // conflicts with the main method in the Application.java file. From what I understand, we should only have one main method in the entire project.
+    
+    // public static void main(String[] args) {
+    //     User user = new User();
+    //     System.out.println("Generated 6-digit number: " + user.getUsername());
+    // }
 
 
     public Long getId() {

@@ -19,10 +19,12 @@ public class DepartmentService {
         return departmentRepository.findAll();
     }
     
+    @SuppressWarnings("null") // Suppressing null warning
     public Department createDepartment(Department department){
         return departmentRepository.save(department);
     }
 
+    @SuppressWarnings("null") // Suppressing null warning
     public Department findDepartment(Long id) {
         Optional<Department> optionalDepartment = departmentRepository.findById(id);
         if(optionalDepartment.isPresent()) {
@@ -32,6 +34,7 @@ public class DepartmentService {
         }
     }
 
+    @SuppressWarnings("null") // Suppressing null warning
     public Department findDepartmentById(Long exampleId) {
         Optional<Department> optionalDepartment = departmentRepository.findById(exampleId);
         return optionalDepartment.orElse(null);

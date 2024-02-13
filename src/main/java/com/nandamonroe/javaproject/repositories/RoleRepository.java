@@ -9,6 +9,7 @@ import com.nandamonroe.javaproject.models.Role;
 
 @Repository
 public interface RoleRepository extends CrudRepository<Role, Long> {
+    @SuppressWarnings("null") // Suppressing null warning
     List<Role> findAll();
     List<Role> findByName(String string);
 }

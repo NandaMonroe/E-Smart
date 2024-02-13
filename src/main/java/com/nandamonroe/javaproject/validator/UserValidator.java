@@ -10,12 +10,14 @@ import com.nandamonroe.javaproject.models.User;
 public class UserValidator implements Validator {
     
     //    1
+    @SuppressWarnings("null") // Suppressing null warning
     @Override
     public boolean supports(Class<?> c) {
         return User.class.equals(c);
     }
     
     // 2
+    @SuppressWarnings("null") // Suppressing null warning
     @Override
     public void validate(Object object, Errors errors) {
         User user = (User) object;
